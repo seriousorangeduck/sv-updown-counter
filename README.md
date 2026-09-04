@@ -1,9 +1,8 @@
 # sv-updown-counter
 
-```markdown
+
 # 4-bit UP/DOWN Counter — SystemVerilog enum FSM
 
-![waveform](waveform.png)
 
 **Result: 20/20 self-checks pass** — including the required double-4
 (6 → 5 → 4 → 4 → 3) and the DOWN wrap (0 → 15).
@@ -24,7 +23,7 @@
 Open in EDA Playground: <paste your saved-link URL here>
 Or: paste the two .sv files, select Icarus Verilog + SystemVerilog,
 tick "Open EPWave after run", click Run.
-```
+
 
 3. **Add files with separate commits** (this is what creates a professional history):
    - `Add file → Create new file` → name it `rtl/updown_counter.sv` (typing the `/` creates the folder) → paste design → commit: `add RTL for enum-based updown counter`
@@ -34,9 +33,3 @@ tick "Open EPWave after run", click Run.
 4. **EDA Playground link:** back on your run, click **Save** (top), copy the URL, paste into the README where indicated.
 5. **Pin it:** your profile → "Customize your pins" → add this repo.
 6. **Test the link in an incognito window.**
-
-✅ **Done when:** incognito shows the repo with README + waveform image rendering, ≥4 commits in history.
-
----
-
-**Start Step 1 right now.** Run it, and tell me what the console prints — if all 20 pass, say "done" and move to Step 2; if anything fails, paste the output and I'll debug it with you.
