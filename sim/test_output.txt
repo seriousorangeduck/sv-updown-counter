@@ -1,0 +1,29 @@
+[2026-09-04 15:15:58 UTC] iverilog '-Wall' '-g2012' design.sv testbench.sv  && unbuffer vvp a.out  
+VCD info: dumpfile dump.vcd opened for output.
+=== 4-bit UP/DOWN Counter Test ===
+PASS: reset | count=0
+PASS: UP 0->1 | count=1
+PASS: UP 1->2 | count=2
+PASS: UP 2->3 | count=3
+PASS: UP 3->4 | count=4
+PASS: UP 4->5 | count=5
+PASS: UP 5->6 | count=6
+PASS: DOWN 6->5 | count=5
+PASS: DOWN 5->4 (first 4) | count=4
+PASS: DOWN 4->4 (second 4) | count=4
+PASS: DOWN 4->3 | count=3
+PASS: DOWN 3->2 | count=2
+PASS: DOWN 2->1 | count=1
+PASS: DOWN 1->0 | count=0
+PASS: DOWN 0->15 wrap | count=15
+PASS: UP back to 6 | count=6
+PASS: DOWN 6->5 (again) | count=5
+PASS: first 4 (again) | count=4
+PASS: second 4 (in ST_HOLD_4) | count=4
+PASS: HOLD -> UP 4->5 | count=5
+=== ALL 20 CHECKS PASSED ===
+testbench.sv:81: $finish called at 266000 (1ps)
+Finding VCD file...
+./dump.vcd
+[2026-09-04 15:15:59 UTC] Opening EPWave...
+Done
